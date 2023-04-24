@@ -1,4 +1,4 @@
-# WebApp boilerplate with React JS
+gg# WebApp boilerplate with React JS
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
 
 <p align="center">
@@ -75,7 +75,7 @@ const MyComponentSuper = () => {
 }
 ```
 
-## Publish your website!
+## Publish your website! BLA BLA BLA
 
 1. **Vercel:** The FREE recomended hosting provider is [vercel.com](https://vercel.com/), you can deploy in 1 minutes by typing the following 2 commands:
 
