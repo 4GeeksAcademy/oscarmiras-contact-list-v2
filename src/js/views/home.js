@@ -1,6 +1,7 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
+import { Link } from "react-router-dom";
 
 /**
  * Mostrar todos los contactos de mi agenda
@@ -12,8 +13,24 @@ import "../../styles/home.css";
  * 
  */
 
+const borrarContacto = (id) => {
+		// 1. Tenemos que hacer un fetch a la URL correcta (ver documentación de la API)
+		// 2. El método HTTP a utilizar es el método DELETE
+		// 3a. Vuelvo a hacer un GET a la API y machaco la variable de estado donde tengo almacenados todos mis contactos (parecido a lo que hacíemdos en la TODO FETCH API). setContacts(res)
+		// 3b. En el useEffect que usais para hacer el GET, poniendo como dependencia por ejemplo la variable que almacena todos los contactos. Necesitas también eliminar el contacto de la variable de estado.  
+         
+}
+
 export const Home = () => (
 	<div className="text-center mt-5">
+		{/** Para cada contacto, tengo que usar su propiedad .id para identificarlo de forma única, y así saber que contacto hay que borrar de la API */}
+         <div className="card" >
+			<button onClick={()=> borrarContacto(contact.id)}>ICONO DE BORRAR</button>
+			<Link to={"/edit/${contact.id}"}>
+			<button>ICONO DE EDITAR</button>
+			</Link>
 
+		     CADA TARJETA DE CONTACTO
+		  </div>
 	</div>
 );
